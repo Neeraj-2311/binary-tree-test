@@ -1,0 +1,41 @@
+section{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+section.has-value::before{
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    content: "";
+    left: 50%;
+    top: 0;
+    background-color: black;
+}
+
+.tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tree-level {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.node {
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.has-value {
+    display: inline-block;
+}
